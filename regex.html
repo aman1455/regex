@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blood Donation form</title>
+    <link rel="stylesheet" href="regex.css">
+</head>
+<body>
+    <div class="container">
+        
+        <div class="head"><h1>User Record List</h1>
+        </div>
+        <form onsubmit="return validation()">
+
+            <div class="form-group">
+                <label>User name</label>
+                <input type="text" id="username"   placeholder="type your user name">
+                <span id="usererror"></span>
+            </div>
+            <div class="form-group">
+                <label>Email address</label>
+                <input type="text" id="email" placeholder="type your Email">
+                <span id="emailerror"></span>
+            </div>
+            <div class="form-group">
+                <label>Select your blood grroup</label>
+                <input type="text" id="blood_group" placeholder="enter your blood group">
+                <span id="blooderror"></span>
+            </div>
+            <div class="form-group">
+                <label>Phone number</label>
+                <input type="text" id="phone_number" placeholder="enter your phone number">
+                <span id="phoneerror"></span>
+            </div>
+            <div class="form-group">
+                <label>Enter your address</label>
+                <textarea name="" id="adress" cols="80" rows="5"></textarea>
+                <span id="adresserror"></span>
+            </div>
+            <div class="form-group">
+                <label>Any other details regarding your medical health</label>
+                <textarea name="" id="querry" cols="80" rows="5"></textarea>
+                <span id="querryserror"></span>
+            </div>
+            
+            <input id="btn" type="submit">
+        </form>
+    
+
+            
+        
+    </div>
+   
+        
+
+   <script src="regex.js"></script>
+</body>
+</html>
